@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evans Nkrumah</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="images/profile.jpg" alt="My profile picture" class="profile-img">
+            <h1 class="name">Evans Nkrumah</h1>
+        </div>
+         <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="www.linkedin.com/in/evans-nkrumah-3b1861243">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <section class="course-container">
+            <div class="coursework">
+                <h3>Course Work</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="location">
+                <h3>Accra, Ghana</h3>
+                <img src="images/movenpick.jpg" alt="Movenpick Ambassador Accra">
+                <p>Movenpick Ambassador Accra</p>
+            </div>
+        </section>
+
+        <section class="certificates">
+            <h3>Web and Computer Programming Certificates</h3>
+            <div class="filters">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div class="courses">
+                <button class="cse">CSE 110</button>
+                <button class="wdd">WDD 130</button>
+                <button class="cse">CSE 111</button>
+                <button class="cse">CSE 210</button>
+                <button class="wdd">WDD 131</button>
+                <button class="wdd">WDD 231</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🌴 Evans Nkrumah 🌴 Takoradi, Ghana</p>
+        <img src="images/ghana_flag.jpg" alt="Ghana Flag">
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = "Last Update: " + document.lastModified;
+    </script>
+</body>
+
+</html>
